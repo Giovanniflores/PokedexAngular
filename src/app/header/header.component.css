@@ -1,0 +1,19 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #4caf50; /* Color verde temático */
+    color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra opcional */
+  }
+  
+  .logo {
+    height: 50px; /* Ajusta según el tamaño deseado */
+  }
+  
+  .date {
+    font-size: 16px; /* Ajusta según el tamaño deseado */
+    color: #333; /* Color del texto */
+  }
+  

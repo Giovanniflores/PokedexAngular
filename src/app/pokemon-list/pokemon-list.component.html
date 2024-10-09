@@ -1,0 +1,24 @@
+<div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h1>Lista Pokemon</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4" *ngFor="let pokemon of pokemons">
+        <div class="card" (click)="openPokemonModal(pokemon)">
+          <div class="card-body">
+            <h5 class="card-title">{{ pokemon.name | titlecase }}</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+    <mat-paginator [length]="totalPokemons"
+               [pageSize]="limit"
+               [pageSizeOptions]="[10, 20, 50]"
+               (page)="handlePageEvent($event)">
+    </mat-paginator>
+
+      
+  </div>
+  
